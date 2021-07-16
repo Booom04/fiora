@@ -1,5 +1,5 @@
-import reducer, { State, initialState } from '../../state/reducer';
-import { Action, ActionTypes } from '../../state/action';
+import reducer, { State, initialState } from '../../src/state/reducer';
+import { Action, ActionTypes } from '../../src/state/action';
 import getFriendId from '../../../utils/getFriendId';
 
 describe('redux reducer', () => {

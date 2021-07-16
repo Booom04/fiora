@@ -1,4 +1,4 @@
-import Message from '../web/components/Message';
+import Message from '../web/src/components/Message';
 import socket from '../web/socket';
 
 import { SEAL_TEXT, SEAL_USER_TIMEOUT } from './const';

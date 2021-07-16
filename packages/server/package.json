@@ -4,8 +4,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=production ts-node -r dotenv/config --transpile-only src/main.ts",
-    "dev:server": "cross-env NODE_ENV=development nodemon src/main.ts --exec \"ts-node --files -r dotenv/config\" --config .nodemonrc --watch ../"
+    "start": "cross-env NODE_ENV=production DOTENV_CONFIG_PATH=../../.env ts-node -r dotenv/config --transpile-only src/main.ts",
+    "dev:server": "cross-env NODE_ENV=development DOTENV_CONFIG_PATH=../../.env nodemon src/main.ts --exec \"ts-node --files -r dotenv/config\" --config .nodemonrc --watch ../"
   },
   "dependencies": {
     "@fiora/bin": "^1.0.0",
